@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con CSS Layout - display: inline-block</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            background-color: #de6824;
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Contenido 1</div>
+        <div class="box">Contenido 2</div>
+        <div class="box">Contenido 3</div>
+        <div class="box">Contenido 4</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explorando la propiedad CSS Layout - display: inline-block:</h2>
+        <p>La propiedad <strong>display: inline-block</strong> permite que los elementos se muestren como bloques, pero fluyen como elementos en línea, lo que significa que pueden tener un ancho y alto definidos y pueden estar alineados horizontalmente.</p>
+        <p>En esta página, los elementos de tipo "caja" se muestran en línea uno al lado del otro, pero tienen un ancho y alto definidos, lo que les permite tener un diseño de cuadrícula.</p>
+        <p>Además, se ha agregado una transición suave al hacer hover sobre las cajas para agregar interactividad y mejorar la experiencia del usuario.</p>
+    </div>
+</body>
+</html>

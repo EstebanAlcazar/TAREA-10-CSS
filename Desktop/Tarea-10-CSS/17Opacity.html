@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Opacity</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ff7f50; /* Coral */
+            color: #ffffff; /* Blanco */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #2ecc71; /* Esmeralda */
+            color: #ffffff; /* Blanco */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            font-size: 24px;
+        }
+
+        .content:hover {
+            opacity: 1;
+        }
+
+        .explanation {
+            background-color: #ffffff; /* Blanco */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #ff7f50; /* Coral */
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">Contenido con Opacity</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explorando la propiedad CSS Opacity:</h2>
+        <p>La propiedad <strong>opacity</strong> se utiliza para controlar la transparencia de un elemento. Tiene un valor comprendido entre 0 (totalmente transparente) y 1 (totalmente opaco).</p>
+        <p>En esta página, al pasar el cursor sobre el contenido, la opacidad aumenta de 0.8 a 1, lo que hace que el elemento se vuelva completamente opaco.</p>
+    </div>
+</body>
+</html>

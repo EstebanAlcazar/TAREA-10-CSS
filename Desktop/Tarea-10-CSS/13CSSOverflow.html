@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con CSS Overflow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+            height: 200px;
+        }
+
+        .auto {
+            overflow: auto;
+            height: 200px;
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box visible">Visible Overflow</div>
+        <div class="box hidden">Hidden Overflow</div>
+        <div class="box scroll">Scroll Overflow</div>
+        <div class="box auto">Auto Overflow</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explorando las Propiedades de Desbordamiento CSS:</h2>
+        <p>La propiedad <strong>visible</strong> muestra el contenido que sobresale de su contenedor, sin recortarlo.</p>
+        <p>La propiedad <strong>hidden</strong> oculta el contenido que sobresale de su contenedor, recortándolo.</p>
+        <p>La propiedad <strong>scroll</strong> muestra barras de desplazamiento para permitir al usuario desplazarse por el contenido que sobresale del contenedor.</p>
+        <p>La propiedad <strong>auto</strong> muestra barras de desplazamiento solo cuando es necesario, dependiendo del contenido que sobresale del contenedor.</p>
+    </div>
+</body>
+</html>

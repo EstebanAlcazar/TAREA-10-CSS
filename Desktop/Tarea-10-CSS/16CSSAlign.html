@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con CSS Align</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .content {
+            background-color: #e74c3c; /* Rojo */
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .left-align {
+            text-align: left;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #e74c3c; /* Rojo */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content left-align">Contenido alineado a la izquierda.</div>
+        <div class="content right-align">Contenido alineado a la derecha.</div>
+        <div class="content justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula sapien eget nulla efficitur, at commodo ligula dapibus.</div>
+        <div class="content center">Contenido centrado.</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explorando la propiedad CSS Align:</h2>
+        <p>La propiedad <strong>text-align</strong> se utiliza para alinear el texto y otros elementos en un contenedor. Puede tener los siguientes valores:</p>
+        <ul>
+            <li><strong>left:</strong> Alinea el contenido a la izquierda.</li>
+            <li><strong>right:</strong> Alinea el contenido a la derecha.</li>
+            <li><strong>justify:</strong> Justifica el contenido, creando espacios adicionales entre las palabras para que el texto se alinee en ambos lados.</li>
+            <li><strong>center:</strong> Centra el contenido horizontalmente en el contenedor.</li>
+        </ul>
+    </div>
+</body>
+</html>

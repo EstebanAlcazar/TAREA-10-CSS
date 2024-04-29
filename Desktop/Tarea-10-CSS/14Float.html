@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con CSS Float</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            overflow: hidden; /* Clearfix */
+        }
+
+        .box {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            float: left;
+            border-radius: 5px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .none {
+            float: none;
+        }
+
+        .inherit {
+            float: inherit;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box left">Left Float</div>
+        <div class="box right">Right Float</div>
+        <div class="box none">None Float</div>
+        <div class="box inherit">Inherit Float</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explorando las Propiedades de Flotación CSS:</h2>
+        <p>La propiedad <strong>float: left</strong> mueve un elemento hacia la izquierda y permite que otros elementos floten alrededor de él a la derecha.</p>
+        <p>La propiedad <strong>float: right</strong> mueve un elemento hacia la derecha y permite que otros elementos floten alrededor de él a la izquierda.</p>
+        <p>La propiedad <strong>float: none</strong> desactiva la flotación de un elemento, lo que lo coloca de nuevo en el flujo normal del documento.</p>
+        <p>La propiedad <strong>float: inherit</strong> hace que un elemento herede la propiedad de flotación de su elemento contenedor.</p>
+    </div>
+</body>
+</html>

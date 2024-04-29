@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+
+        .content {
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            border: 5px dotted #e74c3c;
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .border-examples {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .border-example {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .dotted {
+            border: 3px dotted #3498db;
+        }
+
+        .dashed {
+            border: 3px dashed #27ae60;
+        }
+
+        .solid {
+            border: 3px solid #f39c12;
+        }
+
+        .double {
+            border: 3px double #9b59b6;
+        }
+
+        .groove {
+            border: 3px groove #c0392b;
+        }
+
+        .ridge {
+            border: 3px ridge #16a085;
+        }
+
+        .inset {
+            border: 3px inset #34495e;
+        }
+
+        .outset {
+            border: 3px outset #95a5a6;
+        }
+
+        .none {
+            border: none;
+        }
+
+        .hidden {
+            border: 3px hidden #000;
+        }
+
+        .explicacion {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .explicacion h2 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explicacion p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Bordes</h1>
+            <p>Diferentes estilos de bordes para tus elementos.</p>
+            <div class="border-examples">
+                <div class="border-example dotted"></div>
+                <div class="border-example dashed"></div>
+                <div class="border-example solid"></div>
+                <div class="border-example double"></div>
+                <div class="border-example groove"></div>
+                <div class="border-example ridge"></div>
+                <div class="border-example inset"></div>
+                <div class="border-example outset"></div>
+                <div class="border-example none"></div>
+                <div class="border-example hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explicacion">
+        <h2>Explorando las Propiedades de los Bordes:</h2>
+        <p>border-radius: Define el radio de las esquinas del borde, creando bordes redondeados.</p>
+        <p>border: Establece el ancho, el estilo y el color del borde.</p>
+        <p>dotted, dashed, solid, double, groove, ridge, inset, outset: Diferentes estilos de bordes, cada uno con su apariencia única.</p>
+        <p>none: Elimina el borde, dejando el elemento sin bordes visibles.</p>
+        <p>hidden: Crea un borde invisible que aún ocupa espacio en el diseño.</p>
+    </div>
+</body>
+</html>

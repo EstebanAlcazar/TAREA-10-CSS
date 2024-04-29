@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .explanation h2 {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>25</td>
+            <td>México</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>30</td>
+            <td>Argentina</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>22</td>
+            <td>Chile</td>
+        </tr>
+    </table>
+
+    <div class="explanation">
+        <h2>Explorando las Propiedades de las Tablas con CSS:</h2>
+        <p>La propiedad <strong>borders</strong> se utiliza para definir el estilo de los bordes de la tabla.</p>
+        <p>La propiedad <strong>size</strong> establece el tamaño de los elementos de la tabla, como el ancho de las celdas y la altura de las filas.</p>
+        <p>La propiedad <strong>alignment</strong> determina la alineación del contenido dentro de las celdas de la tabla, como el texto y otros elementos.</p>
+    </div>
+</body>
+</html>
